@@ -5,6 +5,7 @@
 `postgres -D /usr/local/var/postgres`
 #####Create User
 `createuser --pwprompt adminbhai`
+
 `createuser admin` (without password)
 
 #####Create a database
