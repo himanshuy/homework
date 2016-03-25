@@ -3,10 +3,16 @@
 ###Postgres 
 #####Start postgres on mac osx
 `postgres -D /usr/local/var/postgres`
-#####Create/Connect to db prompt
-`createdb <mydb>` (if db is not created)
+#####Create User
+`createuser --pwprompt adminbhai`
+`createuser admin` (without password)
 
-`psql <mydb>`
+#####Create a database
+`createdb -Oadminbhai -Eutf8 mydb` (if db is not created)
+
+#####Access the database
+
+`psql -U adminbhai -W <mydb>`
 
 ######Quit
 `\q`
