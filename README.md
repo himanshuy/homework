@@ -7,3 +7,6 @@
 `createdb <mydb>` (if db is not created)
 
 `psql <mydb>`
+
+######Quit
+`\q`
